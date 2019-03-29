@@ -1,9 +1,10 @@
+#H1
 Detailed feature: prevent merge conflicts using local commits as indicators
+
 
 The idea of this feature is to gather information from every team member working on a same project. This information consists of monitoring the developers environment to find out when a new commit is made. The current issue holds within cases where one or two local commits are made, and these changes have not been pushed to the remote repository, therefore the other teammates cannot see these changes in real time and thus leading to a merge conflict. 
 
-
-![](images/conflict.png)
+<img align="center" src="images/conflict.png" />
 
 Every time a local commit is detected, the information is sent to our middleware. The middleware contains a clone of the remote repository and creates a mirror of the branches on which the clients are working on. With the clients commit information, the branches are updated. 
 
@@ -19,4 +20,4 @@ An example of the shared graph can be seen here:
 
 An example of the leaf visualization with the files changed can be seen here:
 
-![](images/diff\ dialog.png)
+![](images/diffDialog.png)
